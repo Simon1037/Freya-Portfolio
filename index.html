@@ -15,6 +15,7 @@
       <nav class="main-nav">
         <h2><span>STUDIO</span>HAYCOCK</h2>
         <span class="material-symbols-outlined"> menu </span>
+        
       </nav>
     </header>
     <aside id="sidebar"></aside>
@@ -102,36 +103,75 @@
       <section id="experience" class="experience">
         <h2>mine redskaber</h2>
         <div class="grid">
-          <a href="#"><img src="assets/icons/html.png" alt="html logo"></a>
-          <a href="#"><img src="assets/icons/figma.png" alt="figma logo"></a>
-          <a href="#"><img src="assets/icons/css.png" alt="css logo"></a>
-          <a href="#"><img src="assets/icons/js.png" alt="JavaScript logo"></a>
-          <a href="#"><img src="assets/icons/canva.png" alt="Canva logo"></a>
-          <a href="#"><img src="assets/icons/ai.png" alt="Ai logo"></a>
-          <a href="#"><img src="assets/icons/ae.png" alt="Ae logo"></a>
-          <a href="#"><img src="assets/icons/lr.png" alt="Lr logo"></a>
-          <a href="#"><img src="assets/icons/pr.png" alt="Pr logo"></a>
-          <a href="#"><img src="assets/icons/ps.png" alt="Ps logo"></a>
-          <a href="#"><img src="assets/icons/xd.png" alt="Xd logo"></a>
-          <a href="#"><img src="assets/icons/" alt="logo"></a>
+          <a href="#"><img src="assets/icons/html5.svg" alt="html logo"><span>HTML5 Logo</span></a>
+          <a href="#"><img src="assets/icons/figma.svg" alt="figma logo"> <span>Figma Logo</span></a>
+          <a href="#"><img src="assets/icons/css.svg" alt="css logo"><span>CSS Logo</span></a>
+          <a href="#"><img src="assets/icons/js.svg" alt="JavaScript logo"><span>JS Logo</span></a>
+          <a href="#"><img src="assets/icons/canva.svg" alt="Canva logo"><span>Canva Logo</span></a>
+          <a href="#"><img src="assets/icons/ai.svg" alt="Ai logo"><span>Ai Logo</span></a>
+          <a href="#"><img src="assets/icons/ae.svg" alt="Ae logo"><span>Ae Logo</span></a>
+          <a href="#"><img src="assets/icons/lr.svg" alt="Lr logo"><span>Lr Logo</span></a>
+          <a href="#"><img src="assets/icons/pr.svg" alt="Pr logo"><span>Pr Logo</span></a>
+          <a href="#"><img src="assets/icons/ps.svg" alt="Ps logo"><span>Ps Logo</span></a>
+          <a href="#"><img src="assets/icons/xd.svg" alt="Xd logo"><span>Xd Logo</span></a>
+          <a href="#"><img src="assets/icons/id.svg" alt="Id logo"><span>Id Logo</span></a>
         </div>
       </section>
       <section id="projects"></section>
       <section id="contact" class="contact">
         <h2>Interesseret i et samarbejde?</h2>
         <h3>Lad os skabe noget magi sammen!</h3>
-        <form action="#" method="POST" class="contact-form">
-          <label for="name">Navn</label>
-          <input type="text" id="name" name="fullName" placeholder="John Doe" required />
-  
-          <label for="email">Email Adresse</label>
-          <input type="email" id="email" name="email" placeholder="@mail.com" required />
-  
-          <label for="message">Besked</label>
-          <textarea name="message" id="message" cols="30" rows="10" placeholder="Din besked"></textarea>
-  
-          <button type="submit" class="btn">kontakt</button>
-        </form>
+        <div class="login-form-wrapper">
+          <form
+            method="#"
+            id="login-form"
+            class="login-form"
+            autocomplete="off"
+            role="main"
+          >
+            <h1 class="make-hidden">Login Form</h1>
+            <div>
+              <label class="label-email">
+                <input
+                  type="email"
+                  class="text"
+                  name="email"
+                  placeholder="Email"
+                  tabindex="1"
+                  required
+                />
+                <span class="required">Email</span>
+              </label>
+            </div>
+            <input
+              type="checkbox"
+              name="show-password"
+              class="show-password make-hidden"
+              id="show-password"
+              tabindex="3"
+            />
+            <label class="label-show-password" for="show-password">
+              <span>Show Password</span>
+            </label>
+            <div>
+              <label class="label-password">
+                <input
+                  type="text"
+                  class="text"
+                  name="password"
+                  placeholder="Password"
+                  tabindex="2"
+                  required
+                />
+                <span class="required">Password</span>
+              </label>
+            </div>
+            <input type="submit" value="Log In" />
+            <div class="email">
+              <a href="#">Forgot password?</a>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer id="footer" class="footer">
