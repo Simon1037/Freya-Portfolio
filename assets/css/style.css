@@ -93,7 +93,7 @@ h2 {
   }
 }
 
-/* Variables */
+/* MARK: Variables */
 :root {
   --accent-color: #df8f33;
   --color-1: #243424;
@@ -728,6 +728,7 @@ h2 {
   padding: 10px 25px;
   margin: 30px;
   height: 100px;
+  box-shadow: var(--box-shadow);
 }
 .cv p {
   font-size: 1rem;
