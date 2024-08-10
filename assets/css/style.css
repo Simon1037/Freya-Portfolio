@@ -150,7 +150,7 @@ h2 {
 .hero-ctn,
 .services,
 .footer .social {
-  background-image: url("hero-image.png");
+  background-image: url("../images/hero-image.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
