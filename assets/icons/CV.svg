@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 0px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #000;
+      }
+
+      .cls-3, .cls-2 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 51.02px;
+      }
+
+      .cls-2 {
+        font-family: ArialMT, Arial;
+        font-size: 212.6px;
+      }
+    </style>
+  </defs>
+  <path class="cls-4" d="M799,185.09v574.95l-102.54,90.96H230.09c-18.27,0-33.09-14.82-33.09-33.09V185.09c0-18.27,14.82-33.09,33.09-33.09h535.82c18.27,0,33.09,14.82,33.09,33.09h0Z"/>
+  <path class="cls-1" d="M684.03,749.84l7.93,87.56c.54,6.01,8.11,8.76,12.71,4.63l85.94-77.15c4.68-4.2,2.08-11.71-4.31-12.42l-93.87-10.41c-4.75-.53-8.81,3.24-8.4,7.79Z"/>
+  <g class="cls-3">
+    <text class="cls-2" transform="translate(347.97 563.58)"><tspan x="0" y="0">CV</tspan></text>
+  </g>
+</svg>
