@@ -420,99 +420,54 @@ h2 {
   transform: translateY(0);
 }
 
-
-/* trick from https://css-tricks.com/snippets/css/password-input-bullet-alternatives/ */
 /* MARK: Footer */
 
 .contact-fot {
   background: var(--color-3);
   color: var(--text-color);
   padding: 50px;
+}
+
+.contact-fot-content {
   display: flex;
   justify-content: space-between;
 }
 
-.contact-fot-content{
-  display: flex;
-}
-
-
-
-.first-heading{
+.first-heading {
   color: var(--accent-color);
   font-weight: 500;
 }
-.second-heading{
+.second-heading {
   color: var(--color-2);
-  font-weight: 500
-  ;
+  font-weight: 500;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 20px;
   box-sizing: border-box;
 }
 
-form input, textarea{
+form input,
+textarea {
   padding: 10px;
   font-size: 1rem;
   border-radius: 12px;
-  border: none;
+  border: transparent;
+  min-width: 350px;
   color: var(--color-1);
   background-color: rgba(167, 189, 146, 0.5);
 }
 form input[type="submit"] {
   background-color: var(--color-7);
-  color: var(--color-1); 
-  border: none; 
+  color: var(--color-1);
+  border: transparent;
   padding: 10px;
   cursor: pointer;
   font-size: 1rem;
   border-radius: 12px;
 }
- 
-
-
-
-
-
-/* .footer .social {
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  gap: 80px;
-}
-
-.footer .social ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 80px;
-}
-
-.footer .social .social-icons li {
-  height: 100px;
-  width: 100px;
-  border: 2px solid var(--color-2);
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer .social .social-icons a {
-  color: var(--color-2);
-  font-size: 4rem;
-  font-weight: 600;
-}
-
-.footer .social .site-nav li a {
-  color: var(--color-2);
-  font-size: 2rem;
-} */
 
 .footer .copyright {
   background-color: var(--color-5);
