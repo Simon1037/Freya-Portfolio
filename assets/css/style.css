@@ -430,8 +430,13 @@ h2 {
   padding: 50px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start ;
 }
+
+.contact-fot-content{
+  display: flex;
+}
+
+
 
 .first-heading{
   color: var(--accent-color);
