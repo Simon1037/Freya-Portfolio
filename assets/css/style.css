@@ -458,6 +458,15 @@ form input, textarea{
   color: var(--color-1);
   background-color: rgba(167, 189, 146, 0.5);
 }
+form input[type="submit"] {
+  background-color: var(--color-7);
+  color: var(--color-1); 
+  border: none; 
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 12px;
+}
  
 
 
