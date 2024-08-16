@@ -137,80 +137,44 @@
         </div>
       </section>
       <section id="projects"></section>
-      <section id="contact" class="contact">
-        <h2>Interesseret i et samarbejde?</h2>
-        <h3>Lad os skabe noget magi sammen!</h3>
-        <div class="login-form-wrapper">
-          <form
-            method="#"
-            id="login-form"
-            class="login-form"
-            autocomplete="off"
-            role="main"
-          >
-            <h1 class="make-hidden">Login Form</h1>
-            <div>
-              <label class="label-email">
-                <input
-                  type="email"
-                  class="text"
-                  name="email"
-                  placeholder="Email"
-                  tabindex="1"
-                  required
-                />
-                <span class="required">Email</span>
-              </label>
-            </div>
-            <input
-              type="checkbox"
-              name="show-password"
-              class="show-password make-hidden"
-              id="show-password"
-              tabindex="3"
-            />
-            <label class="label-show-password" for="show-password">
-              <span>Show Password</span>
-            </label>
-            <div>
-              <label class="label-password">
-                <input
-                  type="text"
-                  class="text"
-                  name="password"
-                  placeholder="Password"
-                  tabindex="2"
-                  required
-                />
-                <span class="required">Password</span>
-              </label>
-            </div>
-            <input type="submit" value="Log In" />
-            <div class="email">
-              <a href="#">Forgot password?</a>
-            </div>
-          </form>
-        </div>
-      </section>
     </main>
     <footer id="footer" class="footer">
-      <section id="social" class="social">
-        <h2>Kan også kontaktes her!</h2>
-        <ul class="social-icons">
-          <li><a href="https://www.facebook.com/freyajoyhaycock.lyck/">
-            <i class="fa-brands fa-facebook-f"></i>
-          </a></li>
-          <li><a href="https://www.linkedin.com/in/freya-joy-haycock-5386011aa/">
-            <i class="fa-brands fa-linkedin-in"></i>
-          </a></li>
-        </ul>
-        <ul class="site-nav">
-          <li><a href="#about">Om mig</a></li>
-          <li><a href="#cv">CV</a></li>
-          <li><a href="#projects">Portfolio</a></li>
-          <li><a href="#contact">Kontakt</a></li>
-        </ul>
-      </section>
+      <section class="contact-fot">
+            <div class="contact-fot-content">
+            <div class="head-titel">
+                <h2 class="first-heading">Interesseret i et samarbejde?</h2>
+                <h2 class="second-heading">Kontakt her!</h2>
+            </div>
+            <div class="head-content">
+                <p>freyajoyhaycock@gmail.com</p>
+                <p>+45 36 66 36 66</p>
+            </div>
+            <div class="find-me-content">
+                <h2>Find mig her</h2>
+                <div class="find-me-link">
+                    <a href="https://www.facebook.com/freyajoyhaycock.lyck/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/freya-joy-haycock-5386011aa/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/friajoee/"><i class="fa-brands fa-square-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-fot-form">
+                <form action="submit_form.php" method="POST">
+        
+                    <input type="text" id="fullName" name="fullName" placeholder="Fulde navn" required>
+                    
+                   
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    
+
+                    <textarea id="message" name="message" rows="5" placeholder="Hvad har du på hjertet?" required></textarea>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </div>
+
+        </section>
       <section id="copyright" class="copyright">
         <small>&copy; 2023 Studiohaycock. Alle rettigheder forbeholdes.</p>
 
