@@ -132,7 +132,7 @@ h2 {
 /* MARK: Main */
 
 .wrapper {
-  max-width: 1280px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -190,7 +190,7 @@ h2 {
   justify-content: space-between;
   align-items: center;
   gap: 30px;
-  padding: 60px 0;
+  padding: 60px;
 }
 
 .about h2 {
@@ -459,7 +459,7 @@ h2 {
 
 .col-1 {
   display: grid;
-  gap: 10px;
+  gap: 20px;
 }
 
 .first-heading {
@@ -480,6 +480,7 @@ h2 {
   color: var(--color-2);
   text-decoration: none;
   margin-top: 10px;
+  font-size: 1.8rem;
 }
 
 .footer .h3 {
@@ -557,7 +558,7 @@ form input[type="submit"] {
   }
   .about h2 {
     font-size: 1.5rem;
-    line-height: 18px;
+    line-height: 24px;
   }
   .about p {
     font-size: 1rem;
@@ -683,12 +684,31 @@ form input[type="submit"] {
   .footer .copyright {
     height: 50px;
   }
+
+  form input,
+textarea {
+  min-width: 200px;
+}
+.content-container h2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
 }
 
 @media (width <= 1000px) {
-  .about {
+  .about .wrapper {
     display: flex;
     flex-direction: column-reverse;
-    padding: 30px;
+    padding: 60px;
+
   }
+
+  .contact-fot-content{
+    flex-direction: column;
+    gap: 40px;
+  }
+
+
 }
