@@ -412,7 +412,6 @@ h2 {
   margin: 120px;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 80px;
 }
@@ -686,15 +685,14 @@ form input[type="submit"] {
   }
 
   form input,
-textarea {
-  min-width: 200px;
-}
-.content-container h2{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-}
+  textarea {
+    min-width: 200px;
+  }
+  .content-container h2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 @media (width <= 1000px) {
@@ -702,13 +700,10 @@ textarea {
     display: flex;
     flex-direction: column-reverse;
     padding: 60px;
-
   }
 
-  .contact-fot-content{
+  .contact-fot-content {
     flex-direction: column;
     gap: 40px;
   }
-
-
 }
