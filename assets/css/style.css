@@ -457,6 +457,7 @@ h2 {
   position: fixed;
   top: 50%;
   left: 50%;
+  z-index: 1;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
   width: 450px;
@@ -467,7 +468,7 @@ h2 {
 
 .modal-content {
   font-size: 1rem;
-  margin: 10px;
+  margin: 0 10px 10px 10px;
 }
 .modal-content .close {
   cursor: pointer;
@@ -475,16 +476,17 @@ h2 {
   line-height: 22px;
 }
 
-.modal-header{
-  position: fixed;
+.modal-header {
+  position: sticky;
+  top: 0;
   display: flex;
   flex-direction: row-reverse;
- background-color: white;
   justify-content: space-between;
-  gap: 15px;
+  background-color: white;
+  width: 100%;
+  padding: 10px 0 5px 0;
+  z-index: 1;
 }
-
-
 
 /* MARK: Footer */
 
