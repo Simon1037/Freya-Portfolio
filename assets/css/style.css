@@ -200,6 +200,8 @@ header h2 span {
 
 .social-icon:hover {
   color: var(--accent-color);
+  border-color: var(--accent-color);
+  transition: color 0.3s ease;
 }
 
 .menu-open .menu {
@@ -208,7 +210,11 @@ header h2 span {
 
 .menu-open {
   display: block;
+  opacity: 1;
+  transform: translateY(0);
 }
+
+
 
 /* MARK: Main */
 
