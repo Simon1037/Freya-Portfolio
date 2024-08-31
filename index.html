@@ -9,43 +9,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/1a674daea2.js" crossorigin="anonymous"></script>
     <script src="assets/js/modal.js" defer></script>
+    <script src="assets/js/toggle.js" defer></script>
     <link rel="stylesheet" href="assets/css/style.css"/>
   </head>
   <body>
     <header>
-      <nav class="main-nav">
-        <a href="#hero"><h2><span>STUDIO</span>HAYCOCK</h2></a>
-        <div class="ham-menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="side-menu">
-          <ul>
-            <a href="#about"><li>Om mig</li></a>
-            <a href="#services"><li>Mine ydelser</li></a>
-            <a href="#portfolio"><li>Portfolio</li></a>
-            <a href="#footer"><li>Kontakt</li></a>
-          </ul>
-        </div>
-        <div class="nav-socials">
-          <div class="nav-socials-container">
-            <div class="nav-socials-header">
-              <h3>Kan også kontaktes her!</h3>
-            </div>
-            <div class="string"></div>
-            <div class="nav-socials-icons">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
-          </div>
-          
-
-        </div>
-      </nav>
+      <a href="#hero"><h2><span>STUDIO</span>HAYCOCK</h2></a>
+      <div class="menu-toggle" id="menuToggle">
+          <img src="assets/icons/hm.svg" alt="Hamburgermenu">
+      </div>
     </header>
-    <aside id="sidebar"></aside>
+    <nav class="menu" id="menu">
+      <ul>
+        <li><a href="#">Om mig</a></li>
+        <li><a href="#">Mine ydelser</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+      <div class="seperator"></div>
+      <div class="socials">
+          <p>Kan også kontaktes på</p>
+          <div class="social-icons">
+            <a href="https://facebook.com/yourprofile" target="_blank" class="social-icon facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/yourprofile" target="_blank" class="social-icon instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+    </nav>
     <main>
       <section id="hero" class="hero-ctn">
         <div class="hero-content">

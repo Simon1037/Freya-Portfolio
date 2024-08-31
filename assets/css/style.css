@@ -107,8 +107,95 @@ h2 {
 }
 
 /* MARK: Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
 
-.main-nav {
+header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+header h2 span {
+  font-weight: normal;
+}
+
+.menu-toggle img {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 220px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  text-align: right;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.seperator {
+  border-top: 1px solid #eaeaea;
+  margin: 15px 0;
+}
+
+.socials {
+  margin-top: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icon {
+  font-size: 18px;
+  margin-left: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #0073e6;
+}
+
+.menu-open .menu {
+  display: block;
+}
+
+.menu-open {
+  display: block;
+}
+/* 
+.nav-bar {
   background-color: var(--color-4);
   height: 55px;
   border-bottom: 1px solid var(--color-6);
@@ -129,6 +216,21 @@ h2 {
   color: var(--color-1);
 }
 
+.nav-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  transition: background-color 0.2s ease;
+  background-color: var(--color-5);
+  position: relative;
+  top: 0;
+  z-index: 0;
+}
+
+.hamburger {
+  cursor: pointer; 
+} */
 /* MARK: Main */
 
 .wrapper {
