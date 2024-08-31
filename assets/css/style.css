@@ -447,6 +447,13 @@ h2 {
 }
 
 .modal {
+  scrollbar-width: none; /* Firefox */
+}
+.modal::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.modal {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -458,8 +465,17 @@ h2 {
   border: transparent solid;
 }
 
-.model-content {
+.modal-content {
   font-size: 1.5rem;
+  margin: 10px;
+}
+.modal-content .close {
+  cursor: pointer;
+  font-size: 2rem;
+  line-height: 22px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 /* MARK: Footer */
