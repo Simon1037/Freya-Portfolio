@@ -452,6 +452,14 @@ h2 {
   left: 50%;
   /* bring your own prefixes */
   transform: translate(-50%, -50%);
+  width: 450px;
+  height: 600px;
+  border-radius: 13px;
+  border: transparent solid;
+}
+
+.model-content {
+  font-size: 1.5rem;
 }
 
 /* MARK: Footer */
