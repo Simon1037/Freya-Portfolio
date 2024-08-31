@@ -120,6 +120,8 @@ header h2 {
   font-size: 24px;
   font-weight: bold;
   margin: 0;
+  text-decoration: none;
+  color: var(--color-2);
 }
 
 header h2 span {
@@ -514,6 +516,10 @@ header h2 span {
 .modal-content {
   font-size: 1rem;
   margin: 0 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
 }
 
 .modal-content .close {
@@ -542,6 +548,26 @@ header h2 span {
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
+.modal-content h3{
+  font-size: 1.5rem;
+  margin: 15px 0;
+  font-weight: 600;
+  line-height: 1rem;
+}
+
+.modal-content img {
+  display: flex;
+  align-content: center;
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.modal-content p {
+  margin: 15px 25px;
+}
+
 
 /* MARK: Footer */
 
