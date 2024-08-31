@@ -260,7 +260,6 @@ header h2 span {
 }
 
 .hero-ctn,
-.services,
 .footer .social {
   background-image: url("../images/hero-image.png");
   background-position: center;
@@ -368,11 +367,8 @@ header h2 span {
   padding: 40px;
 }
 
-.services .wrapper {
-  /*   max-width: 800px; */
-}
-
 .services h2 {
+  font-size: 2rem;
   font-weight: 600;
   text-align: center;
 }
@@ -380,10 +376,60 @@ header h2 span {
 .services .service-item-grid {
   display: flex;
   align-items: center;
+  height: 480px;
   gap: 48px;
 }
 
 .services .service-item {
+  background-color: var(--color-3);
+  color: var(--color-2);
+  padding: 35px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 340px;
+  gap: 32px;
+  box-shadow: var(--box-shadow);
+}
+
+.services .service-item:hover {
+  height: auto;
+  min-height: 340px;
+}
+
+.services .service-item:hover p {
+  overflow: visible;
+  display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  -webkit-box-orient: unset;
+  text-overflow: unset;
+}
+
+.services .service-item img {
+  height: 80px;
+}
+
+.services .service-item h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.services .service-item p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.hl {
+  color: var(--accent-color);
+  font-weight: 600;
 }
 
 /* MARK: Main experience */
@@ -391,6 +437,10 @@ header h2 span {
 .experience {
   padding: 40px;
   background-color: var(--color-3);
+}
+
+.experience .wrapper {
+  max-width: 800px;
 }
 
 .experience h2 {
@@ -492,6 +542,13 @@ header h2 span {
   position: relative;
 }
 
+.portfolio .grid a img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
 .modal {
   scrollbar-width: none; /* Firefox */
 }
@@ -549,7 +606,7 @@ header h2 span {
   }
 }
 
-.modal-content h3{
+.modal-content h3 {
   font-size: 1.5rem;
   margin: 15px 0;
   font-weight: 600;
@@ -567,7 +624,6 @@ header h2 span {
 .modal-content p {
   margin: 15px 25px;
 }
-
 
 /* MARK: Footer */
 
