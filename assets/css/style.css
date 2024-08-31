@@ -126,6 +126,15 @@ header h2 span {
   font-weight: normal;
 }
 
+.menu-toggle {
+  transition: background-color 0.2s ease-in-out;
+}
+
+.menu-toggle:hover {
+  background-color: var(--color-6);
+  border-radius: 15px;
+}
+
 .menu-toggle img {
   width: 30px;
   height: auto;
@@ -145,7 +154,7 @@ header h2 span {
   text-align: right;
   font-weight: 600;
   overflow: hidden;
-  animation: slideDown 0.4s ease-in-out;
+  animation: slideDown 0.3s ease-in-out;
 }
 
 .menu ul {
@@ -165,7 +174,7 @@ header h2 span {
   font-weight: bold;
 }
 
-.seperator {
+.separator {
   border-top: 1px solid lightgrey;
   margin: 15px 0;
 }
@@ -214,10 +223,10 @@ header h2 span {
 
 @keyframes slideDown {
   0% {
-    transform: translateY(-50%) scale(0);
+    transform: translate(50%, -50%) scale(0);
   }
   100% {
-    transform: translateY(0) scale(1);
+    transform: translate(0, 0) scale(1);
   }
 }
 

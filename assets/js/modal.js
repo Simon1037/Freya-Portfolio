@@ -36,30 +36,3 @@ modals.forEach((modal) => {
     }
   });
 });
-
-/* Enlarge image on click */
-
-// Function to enlarge the image
-function enlargeImage(event) {
-  const image = event.target;
-  const modal = image.closest(".modal");
-
-  // Reset all images to their original size
-  const images = modal.querySelectorAll(".modal-img");
-  images.forEach((img) => {
-    img.style.transform = "scale(1)";
-    img.style.margin = "0";
-  });
-
-  // Enlarge the clicked image
-  image.style.transform = "scale(1.3)";
-  image.style.margin = "40px";
-}
-
-// Add event listener to the modal images
-modals.forEach((modal) => {
-  const images = modal.querySelectorAll(".modal-img");
-  images.forEach((image) => {
-    image.addEventListener("click", enlargeImage);
-  });
-});
