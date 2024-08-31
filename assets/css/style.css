@@ -457,19 +457,21 @@ h2 {
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 1;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
   width: 450px;
   height: 600px;
-  border-radius: 13px;
+  border-radius: 15px;
   border: transparent solid;
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
+  z-index: 1;
+  animation: zoom 0.4s forwards;
 }
 
 .modal-content {
   font-size: 1rem;
   margin: 0 10px 10px 10px;
 }
+
 .modal-content .close {
   cursor: pointer;
   font-size: 2rem;
@@ -486,6 +488,15 @@ h2 {
   width: 100%;
   padding: 10px 0 5px 0;
   z-index: 1;
+}
+
+@keyframes zoom {
+  from {
+    transform: translate(-50%, -50%) scale(0);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 /* MARK: Footer */
