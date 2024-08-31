@@ -624,6 +624,9 @@ header h2 span {
   margin: 15px 25px;
 }
 
+/* MARK: Carousel */
+
+
 /* MARK: Footer */
 
 .contact-fot {
@@ -708,7 +711,7 @@ form input[type="submit"] {
 .footer .copyright {
   background-color: var(--color-5);
   color: var(--color-3);
-  height: 100px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
