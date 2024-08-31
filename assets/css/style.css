@@ -144,6 +144,8 @@ header h2 span {
   display: none;
   text-align: right;
   font-weight: 600;
+  overflow: hidden;
+  animation: slideDown 0.4s ease-in-out;
 }
 
 .menu ul {
@@ -172,7 +174,7 @@ header h2 span {
   margin-top: 20px;
 }
 
-.socials p{
+.socials p {
   margin-bottom: 10px;
 }
 
@@ -200,8 +202,6 @@ header h2 span {
 
 .social-icon:hover {
   color: var(--accent-color);
-  border-color: var(--accent-color);
-  transition: color 0.3s ease;
 }
 
 .menu-open .menu {
@@ -210,11 +210,16 @@ header h2 span {
 
 .menu-open {
   display: block;
-  opacity: 1;
-  transform: translateY(0);
 }
 
-
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50%) scale(0);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
 
 /* MARK: Main */
 
@@ -355,6 +360,15 @@ header h2 span {
 .services h2 {
   font-weight: 600;
   text-align: center;
+}
+
+.services .service-item-grid {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.services .service-item {
 }
 
 /* MARK: Main experience */
