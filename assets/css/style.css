@@ -111,7 +111,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 12px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.362);
 }
@@ -400,6 +400,7 @@ header h2 span {
 .services .service-item:hover {
   height: auto;
   min-height: 340px;
+  
   
 }
 
