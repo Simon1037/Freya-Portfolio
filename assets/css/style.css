@@ -568,6 +568,11 @@ header h2 span {
   z-index: 1;
   animation: zoom 0.4s forwards;
 }
+ .portfolio-item img:hover{
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+ }
+
 
 .modal-content {
   font-size: 1rem;
