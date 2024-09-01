@@ -217,6 +217,7 @@ header h2 span {
 
 .social-icon:hover {
   color: var(--accent-color);
+  transform: scale(1.06);
 }
 
 .menu-open .menu {
@@ -258,7 +259,7 @@ header h2 span {
   background-color: var(--color-2);
   color: var(--color-3);
 }
-
+/* MARK: Hero Styles */
 .hero-ctn,
 .footer .social {
   background-image: url("../images/hero-image.png");
@@ -284,6 +285,8 @@ header h2 span {
   line-height: 35px;
   text-align: center;
 }
+
+
 
 /* MARK: Main About */
 
@@ -397,7 +400,7 @@ header h2 span {
 .services .service-item:hover {
   height: auto;
   min-height: 340px;
-  transform: ;
+  
 }
 
 .services .service-item:hover p {
