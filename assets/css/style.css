@@ -624,29 +624,83 @@ header h2 span {
   margin: 15px 25px;
 }
 
-/* MARK: Carousel */
+/* MARK:Carousel Styles */
 .carousel {
   position: relative;
-  width: 300px;
-  height: 200px;
-  overflow: hidden;
-}
-.carousel img {
   width: 100%;
-  height: 100%;
-  display: none;
+  height: 300px; 
+  overflow: hidden;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
 }
+
+.carousel img {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .carousel img.active {
   display: block;
+  opacity: 1;
 }
+
 .carousel-controls {
-  text-align: center;
-  margin-top: 10px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  padding: 0 15px;
+  box-sizing: border-box;
 }
+
 .carousel-controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.5rem;
   cursor: pointer;
-  padding: 5px 10px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
 }
+
+.carousel-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: -60px;
+}
+
+.carousel-dots .dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.carousel-dots .dot.active {
+  background-color: #717171;
+}
+
 
 /* MARK: Footer */
 
