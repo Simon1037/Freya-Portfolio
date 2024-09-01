@@ -397,6 +397,7 @@ header h2 span {
 .services .service-item:hover {
   height: auto;
   min-height: 340px;
+  transform: ;
 }
 
 .services .service-item:hover p {
@@ -479,8 +480,8 @@ header h2 span {
   transition: transform 0.3s ease;
   transform: translateY(0);
 
-  /* MARK: Drop-shadow for Icons  */
-  filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 0.544));
+  /* MARK: Drop-shadow for Icons 
+  filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 0.544)); */
 }
 
 .experience .grid a:nth-child(-n + 4) img {
